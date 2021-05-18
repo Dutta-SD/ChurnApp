@@ -1,0 +1,56 @@
+Predict Single Customer Churn Chance
+---
+    parameters:
+        - name : Credit_Score
+          in : query
+          type : number
+          minimum : 300
+          maximum : 900
+          # required : true
+          description: "Enter number within 300 and 900"
+
+        - name : age
+          in : query
+          type : number
+          # required : true
+          minimum : 18
+          maximum : 100
+
+        - name : tenure
+          in : query
+          type : number
+          # required : true
+
+        - name : balance
+          in : query
+          type : number
+          # required : true
+
+        - name : has_credit_card
+          in : query
+          type : number
+          # required : true
+
+        - name : is_active_member
+          in : query
+          type : number
+          # required : true
+
+        - name : estimated_salary
+          in : query
+          type : number
+          # required : true
+
+        - name : geography
+          in : query
+          type : number
+          # required : true
+
+        - name : gender
+          in : query
+          type : number
+          # required : true
+
+    responses:
+        200:
+            description: Output Values
